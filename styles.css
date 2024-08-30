@@ -1,0 +1,112 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: rgb(85, 73, 94);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-icon1,
+.nav-icon {
+  position: relative;
+  text-decoration: none;
+}
+
+.main-wrapper {
+  max-height: 800px;
+  overflow-x: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.my-card {
+  background-color: rgba(93, 84, 84, 0.081);
+  padding: 30px;
+  border-radius: 20px;
+  width: 340px;
+  height: 380px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: overlay;
+  white-space: normal;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.portrait {
+  display: block;
+  height: 280px;
+  width: 280px;
+  margin-top: 10%;
+  margin-left: 25px;
+  margin-bottom: 10rem;
+}
+
+.img {
+  width: 280px;
+  border-radius: 50%;
+  border-style: groove;
+  border-color: rgba(100, 8, 228, 0.545);
+}
+
+.link {
+  text-decoration: none;
+  color: crimson;
+}
+
+.link:hover {
+  color: rgb(190, 15, 15);
+}
+
+.link:active {
+  color: rgb(228, 143, 143);
+}
+
+.note {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .my-card {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
